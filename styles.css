@@ -1,0 +1,183 @@
+/* Variables para ajustar el estilo facilemnte */
+:root {
+  /* Fall chill warm colours */
+  --darker-color: #1a1a1a;
+  --dark-color: #2d2d2d;
+  --color: #904b19;
+  --light-color: #d56717;
+  --lighter-color: #e3ba7d;
+  --almost-white: #fff2dc;
+  --white: #fffdfa;
+}
+
+/* reestablece estilos de navegador y seteamos colores, fondo, y flia de letras */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-image: url("assets/images/back-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.seccion-clara {
+  background-color: var(--almost-white);
+  color: var(--darker-color);
+}
+
+
+
+/* Navbar */
+
+.navbar {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 2px 0px 4px 3px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.div-ul-nav {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-brand {
+  color: var(--almost-white);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+
+.nav-link {
+  color: var(--almost-white);
+  margin: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .nav-link {
+  color: var(--white);
+  background-color:rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  transform: translateY(-2px);
+  border-bottom: 1px solid var(--white);
+}
+
+
+/* Hero section */
+
+.hero {
+  min-height: 450px;
+  
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hero-principal {
+  color: var(--almost-white);
+  padding: 3rem;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30vh;
+  margin-top: 10vh;
+  /* glassmorfism */
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.6), 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition: all 0.3s ease;
+}
+
+.hero-principal:hover {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 6px 8px 2px rgba(0, 0, 0, 0.6), 0 4px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+
+}
+
+.hero-image-profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/* Sobre mi */
+
+.sobre-mi {
+  min-height: 400px;
+  /* padding: 10px; */
+}
+
+.sobre-mi-image {
+  max-height: 500px;
+  margin: 20px 0;
+}
+
+.sobre-mi-title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color);
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sobre-mi-description {
+  color: var(--dark-color);
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+}
+
+
+/* Adaptable (responsive) ..........................................................................*/
+
+/* resizing logo for screen size less than 350px */
+@media screen and (max-width: 350px) {
+  .logo-img-navbar {
+    transform: scale(0.8);
+  }
+
+  .texto-logo-nav {
+    font-size: 0.8rem;
+  }
+}
+
+/* centrar los navbar items for screen size less than 767px */
+@media screen and (max-width: 767px) {
+  .div-ul-nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* cambiar ubicacion de 'sobre mi' image & description for screen size less than 767px */
+
