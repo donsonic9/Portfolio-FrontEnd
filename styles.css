@@ -46,6 +46,24 @@ h1 {
   color: var(--darker-color);
 }
 
+.seccion-glass {
+  color: var(--almost-white);
+  /* glassmorfism */
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.6), 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.seccion-glass-h {
+  transition: all 0.3s ease;
+}
+.seccion-glass-h:hover {
+  background: rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
 
 
 /* Navbar */
@@ -89,6 +107,16 @@ h1 {
   transform: translateY(-2px);
   border-bottom: 1px solid var(--white);
 }
+
+.nav-item-drop .nav-link {
+  font-size: 1.5rem;
+  padding:0 30px;
+  
+}
+
+
+
+
 
 
 /* Hero section */
@@ -158,16 +186,85 @@ h1 {
 }
 
 
+/* Experiencia */
+
+.exp {
+  min-height: 450px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.exp .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-cont {
+  margin: 10px 10px 20px 10px;
+}
+
+.exp-title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--almost-white);
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.exp-image {
+  margin: 10px;
+  width: 1.2in;
+}
+
+.exp-info {
+  margin: 10px 0;
+}
+
+.exp-info h3 {
+  padding: 0 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.exp-info p {
+  padding: 10px;
+  font-style: italic;
+}
+
+
+
 /* Adaptable (responsive) ..........................................................................*/
 
-/* resizing logo for screen size less than 350px */
-@media screen and (max-width: 350px) {
+/* resizing logo for screen size less than 357px */
+@media screen and (max-width: 357px) {
   .logo-img-navbar {
     transform: scale(0.8);
   }
 
   .texto-logo-nav {
     font-size: 0.8rem;
+  }
+}
+
+/* resizing logo & profile image for screen size less than 311px */
+@media screen and (max-width: 311px) {
+  .logo-img-navbar {
+    transform: scale(0.6);
+  }
+
+  .texto-logo-nav {
+    font-size: 0.6rem;
+  }
+
+  .hero-image-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
   }
 }
 
@@ -179,5 +276,5 @@ h1 {
   }
 }
 
-/* cambiar ubicacion de 'sobre mi' image & description for screen size less than 767px */
+
 
