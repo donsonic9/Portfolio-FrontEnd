@@ -99,7 +99,7 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.nav-item:hover .nav-link {
+.nav-item:hover .nav-link, .nav-item-drop:hover .btn {
   color: var(--white);
   background-color:rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.08);
@@ -114,7 +114,21 @@ h1 {
   
 }
 
+.nav-item-drop .btn {
+  color: var(--almost-white);
+  font-size: 1.5rem;
+}
 
+.dropdown-item {
+  color: var(--almost-white);
+  border-radius: 0px;
+  
+}
+
+.dropdown-item:hover {
+  color: var(--white);
+  
+}
 
 
 
@@ -218,6 +232,7 @@ h1 {
 .exp-image {
   margin: 10px;
   width: 1.2in;
+  height: 1in;
 }
 
 .exp-info {
@@ -228,6 +243,10 @@ h1 {
   padding: 0 10px;
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.exp-info h5 {
+  padding: 0 14px;
 }
 
 .exp-info p {
