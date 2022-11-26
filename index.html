@@ -26,7 +26,7 @@
 </head>
 <body>
   <!-- Navbar responsive -->
-  <nav class="navbar navbar-expand-md navbar-dark">
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img class="logo-img-navbar" src="assets/images/argentina_programa_logo_2.png" alt="Argentina Programa Logo" title="Argentina Programa Logo">
@@ -41,10 +41,10 @@
             <a class="nav-link" aria-current="page" href="#sobre-mi-id">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Habilidades</a>
+            <a class="nav-link" href="#habilidades">Habilidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos</a>
+            <a class="nav-link" href="#proyectos-id">Proyectos</a>
           </li>
           <li class="nav-item contact">
             <a class="nav-link active" href="#">Contacto</a>
@@ -71,19 +71,21 @@
   <!-- Hero section -->
   <section class="hero d-flex align-items-sm-stretch">
     <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-      <img class="hero-image-profile" src="assets/images/profile-picture-3.jpg" alt="Imagen principal de Alexander Repollo" title="Imagen principal de Alexander Repollo">
+      <img class="hero-image-profile" src="assets/images/profile-picture-4.jpg" alt="Imagen principal de Alexander Repollo" title="Imagen principal de Alexander Repollo">
       <h1>Hola! soy Alexander Repollo!</h1>
       <h2>Estudiante de desarrollo web, te invito a conocerme!</h2>
     </div>
   </section>
-
+  
+  <!-- El único proposito de este div, es redirigir al usuario cuando hace click en la navbar, para evitar que la navbar se sobreponga al contenido cuando se redirige. -->
+  <div id="sobre-mi-id" class="div-id-specific"></div>
   <!-- Sobre mi -->
-  <section id="sobre-mi-id" class="sobre-mi seccion-clara d-flex align-items-center justify-content-center">
-    <div class="container row d-flex flex-row align-items-stretch justify-content-between">
+  <section class="sobre-mi seccion-clara d-flex align-items-center justify-content-center">
+    <div class="sobre-mi-cont container row d-flex flex-row align-items-stretch justify-content-between">
       <img class="sobre-mi-image img-fluid col-12 col-lg-4" src="assets/images/profile-picture-5.jpg" alt="Foto de Alexander en seccion 'Sobre mi'." title="Foto de Alexander">
       <div class="container col-12 col-md-8 d-flex flex-column justify-content-center align-items-center">
         <h2 class="sobre-mi-title">Conoce un poco sobre mi!.</h2>
-        <p class="sobre-mi-description text-center">Soy Alex, estudiante de desarrollo web full stack! Comence a estudiar en Junio 2022, y aún sigo aprendiendo. Creo que todos los días son una gran oportunidad para aprender algo nuevo!.<br> Tengo un gran interes por la programación, el desarrollo web, motorsport, y el mundo crypto. También me gusta la música, la naturaleza, y la fotografía, motivo por el cual utilizo una imagen propia como fondo de pantalla en esta web.<br> Me considero una persona resolutiva, responsable, y proactiva, aunque también soy ambicioso, sociable, y detallista. Y si, también me encanta el café! <i class="bi bi-cup-hot"></i></p>
+        <p class="sobre-mi-description text-center">Soy Alex, estudiante de desarrollo web full stack! Comence a estudiar en Junio 2022, y aún sigo aprendiendo. Creo que todos los días son una gran oportunidad para aprender algo nuevo!.<br> Tengo un gran interes por la programación, el desarrollo web, motorsport, y el mundo crypto. También me gusta la música, la naturaleza, y la fotografía.<br> Considero que soy una persona resolutiva, responsable, y proactiva, aunque también ambicioso, sociable, y detallista. Y si, también me encanta el café! <i class="bi bi-cup-hot"></i></p>
       </div>
     </div>
   </section>
@@ -166,7 +168,7 @@
               <a href="assets/images/certificates/certificate-ar.jpg" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/certificate-ar.jpg" alt="">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Primera etapa del programa "Argentina programa", en el que vimos introducción a la lógica de programación con Gobestones, introducción a las funciones con JavaScript, e introducción a POO con Ruby.</p>
               <a class="course-button" href="https://seprogramarsso.inti.gob.ar/auth/realms/master/protocol/saml/clients/mumuki?SAMLRequest=fZFNb8IwDIb%2FSm85tSkRbSGiSGhckNgFth12mUzwICIfXZxM%2B%2FlrYUhMQzvafv34tT0jsKaTixSPboMfCSlmCyIMUXv34B0li2GL4VMrfN6sW3aMsSPJOWEX%2FCGAhVBoF3Vx8LsCAoeexAcoV2DMDtSJZcueqh0MyLsAIv%2BXERCMJW6BIgbea6NX3vygjUYX%2B2Ky6aRZtlq27K1qSmgqAXldqiYf417kk3do8hqmo7qa7uvJVPVSooQrRxFcbJkohchHo1xUT%2BVYilqK8SvLXjDQ2asoSpZ9WeNIDnNbloKTHkiTdGCRZFRyu3hcy14o4Xq225bu%2F57rWmw%2BG9Ty7C7ML3vN%2BG3uEv1%2B1fwb&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=MPMoY%2FgZG3n%2BFZWCKEFEnBjyA9HCj%2FirLwM5QI4u%2Fby3XyXEubdI7oVc3gFl71VosWhCBAIl%2BFoLNAjDxAR3N2msrgqjzjCwurmExKdW2TrHo%2BgoOI2jWuB9stFJ6mR1F2KsNuBIhCJu4oWdhApzp76WVnDjeHogFBZmDV9b2J2NATOEkccknPxHkyfC3Peth50T2t4Lj2x4CDn3DPDHUJXZFMIoWVLi6mCY13CcOmW8BSbAPBYeELAqcLuUN5BH3HTRUY1amFq1XRjS2ZpOaAgecVGKjZ8qFGStEbSpm%2FNq6rg8x5rR56X9whi9IzUv7MpSJajpsXnswx%2Bx0tC5zQ%3D%3D" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -192,7 +194,7 @@
               <a href="assets/images/certificates/GrasshopperFundamentosdelacodificaciónCertificate.png" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/GrasshopperFundamentosdelacodificaciónCertificate.png" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Fundamentos de la programación con JavaScript, se ven nociones básicas como creación de variables, estructuras de control (if, else if, else), 'for' loops, y objects.</p>
               <a class="course-button" href="https://learn.grasshopper.app/" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -209,7 +211,7 @@
               <a href="assets/images/certificates/GrasshopperFundamentosdecodificaciónIICertificate.png" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/GrasshopperFundamentosdecodificaciónIICertificate.png" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Parte dos de 'fundamentos' con JavaScript, en donde se vieron métodos de strings, y arreglos. Opciones alternativas como el operador ternario, y conceptos como recursividad y llamadas.</p>
               <a class="course-button" href="https://learn.grasshopper.app/" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -219,11 +221,12 @@
 
       <!-- Lemon -->
       <div class="container div-title d-flex flex-row justify-content-center align-items-center">
-        <img class="logo-inst " src="assets/images/lemon-logo.webp" alt="Lemon logo">
-        <h3 class="inst-title"> Lemon Cash.</h3>
+        <img class="logo-inst-lemon " src="assets/images/lemon-logo.webp" alt="Lemon logo">
+        <h3 class="inst-title"> </h3>
       </div>
       <!-- Accordion -->
       <div class="accordion accordion-flush" id="accordionFlushExample">
+        <!-- Accordion Item -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
@@ -235,7 +238,7 @@
               <a href="assets/images/certificates/curso_crypto_lemon_certificate-298324044.jpg" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/curso_crypto_lemon_certificate-298324044.jpg" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Curso impartido por el staff de 'Lemon Cash', empresa que se dedica a la economia del mundo crypto en el pais, desarrollo un curso que consta de +30 videos sobre el mundo crypto, web 3.0, NFTs y mas.<br> Temas vistos vistos en el curso abarcan: criptomonedas, stablecoins, Defi, contratos inteligentes, Web 3.0, NFTs, Blockchain, entre otros.</p>
               <a class="course-button" href="https://curso.lemon.me/" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -245,7 +248,7 @@
       <!-- Sololearn -->
       <div class="container div-title d-flex flex-row justify-content-center align-items-center">
         <img class="logo-inst-solo " src="assets/images/SoloLearn_logo.svg.png" alt="Sololearn logo">
-        <h3 class="inst-title"> .</h3>
+        <h3 class="inst-title"> Sololearn.</h3>
       </div>
       <!-- Accordion -->
       <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -262,7 +265,7 @@
               <a href="assets/images/certificates/python_for_begginers_certificate_sl.png" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/python_for_begginers_certificate_sl.png" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Contenido: Basic concepts, strings, variables, control flow, lists, y functions.</p>
               <a class="course-button" href="https://www.sololearn.com/learning/1157" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -280,7 +283,7 @@
               <a href="assets/images/certificates/html_certificate_sl.jpg" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/html_certificate_sl.jpg" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Contenido: ¿Qué es HTML?, elementos en HTML, Attributos, HTML page structure, HTML5, entre otros.</p>
               <a class="course-button" href="https://www.sololearn.com/learning/1014" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -298,7 +301,7 @@
               <a href="assets/images/certificates/css_certificate-sl.jpg" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/css_certificate-sl.jpg" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Contenido: The Basics, Working with text, Properties, Positioning and layout, CSS3 basics, gradients and backgrounds, transitions and transforms, CSS filters.</p>
               <a class="course-button" href="https://www.sololearn.com/learning/1023" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -316,7 +319,7 @@
               <a href="assets/images/certificates/coding_for_marketers_certificate_sl.jpg" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/coding_for_marketers_certificate_sl.jpg" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Contenido: Content on the web, Formatting content, Tweaking a Web page, What is SEO, and Improving SEO.</p>
               <a class="course-button" href="https://www.sololearn.com/learning/1165" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -334,7 +337,7 @@
               <a href="assets/images/certificates/web_dev_fundamentals_sl.png" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/web_dev_fundamentals_sl.png" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Contenido: Basic HTML, Basic CSS, Styling with CSS, y Basic JavaScript.</p>
               <a class="course-button" href="https://www.sololearn.com/learning/1141" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -352,7 +355,7 @@
               <a href="assets/images/certificates/responsive_web_design-sl.jpg" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/responsive_web_design-sl.jpg" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Contenido: The HTML structure, working with HTML & CSS, Making it responsive using media queries, Adding JavaScript & JQuery.</p>
               <a class="course-button" href="https://www.sololearn.com/learning/1162" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -370,7 +373,7 @@
               <a href="assets/images/certificates/javascript_certificate_sl.png" target="_blank">
                 <img class="accordion-certificate" src="assets/images/certificates/javascript_certificate_sl.png" alt="Certificate">
               </a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam perspiciatis, eaque incidunt magni modi cumque. Numquam enim aperiam nulla, accusamus quisquam</p>
+              <p>Contenido: Basic concepts, conditionals & loops, functions, objects, core objects, DOM & Events, ECMAScript 6.</p>
               <a class="course-button" href="https://www.sololearn.com/learning/1024" target="_blank" rel="noopener noreferrer">Ir al Curso</a>
             </div>
           </div>
@@ -381,8 +384,151 @@
     </div>
   </section>
 
+  <!-- Habilidades -->
+  <section class="hab" id="habilidades">
+    <div class="exp container seccion-glass d-flex flex-column">
+      <!-- Habilidades Tecnincas -->
+      <h2 class="exp-title text-center ">Habilidades Técnicas</h2>
+      <div class="hab-div-cont container-fluid d-flex flex-column ">
+        <h3>Nivel Alto</h3>
+        <div class="exp-cont row d-flex justify-content-center align-items-baseline text-center">
+          <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <i class=" fa-brands fa-html5 "></i>
+            <p> HTML 5 </p>
+          </div>
+          <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <i class=" fa-brands fa-css3-alt "></i>
+            <p> CSS 3 </p>
+          </div>
+        </div>
+        <h3>Nivel Medio</h3>
+        <div class="exp-cont row d-flex justify-content-center align-items-baseline text-center">
+          <div class="icon-container col-12 col-sm-6 col-md-3 seccion-glass-h">
+            <i class="fa-brands fa-square-js"></i>
+            <p> JavaScript </p>
+          </div>
+          <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <i class="fa-brands fa-python"></i>
+            <p> Python </p>
+          </div>
+          <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <i class="fa-solid fa-paintbrush"></i>
+            <p> Paint 3D </p>
+          </div>
+        </div>
+        <h3>Nivel Basic</h3>
+        <div class="exp-cont row d-flex justify-content-center align-items-baseline text-center">
+          <div class="icon-container col-12 col-sm-6 col-md-3 seccion-glass-h">
+            <i class=" fa-brands fa-bootstrap"></i>
+            <p> Bootstrap 5</p>
+          </div>
+          <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <i class=" fa-brands fa-git-alt"></i>
+            <p> Git </p>
+          </div>
+          <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <i class=" fa-brands fa-github"></i>
+            <p> Github </p>
+          </div>
+          <!-- <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <i class=" fa-brands fa-github"></i>
+            <p> Github </p>
+          </div> -->
+        </div>
+      </div>
+      <!-- Habilidades Blandas -->
+      <!-- <h2 class="exp-title text-center ">Habilidades Blandas</h2>
+      <div class="exp-cont row seccion-glass seccion-glass-h d-flex justify-content-center">
+      </div> -->
+      <!-- Idiomas & conociemintos extra -->
+      <h2 class="exp-title text-center ">Idiomas</h2>
+      <div class="hab-div-cont container-fluid d-flex flex-column ">
+        <h3>Idiomas</h3>
+        <div class="exp-cont row d-flex justify-content-center align-items-center text-center">
+          <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <img class="language-flag" src="assets/images/ES-Spain-Flag-icon.png" alt="Spain flag">
+            <p> Espanol </p>
+          </div>
+          <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
+            <img class="language-flag" src="assets/images/GB-United-Kingdom-Flag-icon.png" alt="England flag">
+            <p> Ingles </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- El único proposito de este div, es redirigir al usuario cuando hace click en la navbar, para evitar que la navbar se sobreponga al contenido cuando se redirige. -->
+  <div id="proyectos-id" class="div-id-specific"></div>
+  <!-- Proyectos -->
+  <section class="proyectos seccion-clara sobre-mi">
+    <div class="container d-flex flex-column text-center">
+      <h2 class="sobre-mi-title">Proyectos</h2>
+      <div class="proyectos-cont container row d-flex flex-row">
+        <!-- Proyecto Individual -->
+        <div class="proy col-12 col-md-6 col-lg-4">
+          <div class="overlay-relative ">
+            <img class="img-proyecto" src="assets/images/proyectos/ARprograma-portfolio-app-web.png" alt="Proyecto">
+            <div class="overlay">
+              <a href="index.html">Ver proyecto</a>
+            </div>
+          </div>
+          <h3>Portfolio Web AR Programa de Alexander Repollo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quia atque error eius reiciendis, nesciunt </p>
+        </div>
+        <!-- Proyecto Individual -->
+        <div class="proy col-12 col-md-6 col-lg-4">
+          <div class="overlay-relative ">
+            <img class="img-proyecto" src="assets/images/proyectos/ARprograma-portfolio-app-web.png" alt="Proyecto">
+            <div class="overlay">
+              <a href="index.html">Ver proyecto</a>
+            </div>
+          </div>
+          <h3>Portfolio Web AR Programa de Alexander Repollo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quia atque error eius reiciendis, nesciunt corrupti nostrum ducimus optio ea deserunt id recusandae sint. Recusandae amet totam </p>
+        </div>
+        <!-- Proyecto Individual -->
+        <div class="proy col-12 col-md-6 col-lg-4">
+          <div class="overlay-relative ">
+            <img class="img-proyecto" src="assets/images/proyectos/ARprograma-portfolio-app-web.png" alt="Proyecto">
+            <div class="overlay">
+              <a href="index.html">Ver proyecto</a>
+            </div>
+          </div>
+          <h3>Portfolio Web AR Programa de Alexander Repollo</h3>
+          <p>Lorem ipsum dolor sit amet, </p>
+        </div>
+        <!-- Proyecto Individual -->
+        <div class="proy col-12 col-md-6 col-lg-4">
+          <div class="overlay-relative ">
+            <img class="img-proyecto" src="assets/images/proyectos/ARprograma-portfolio-app-web.png" alt="Proyecto">
+            <div class="overlay">
+              <a href="index.html">Ver proyecto</a>
+            </div>
+          </div>
+          <h3>Portfolio Web AR Programa de Alexander Repollo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quia atque error eius reiciendis, nesciunt corrupti nostrum ducimus optio ea deserunt</p>
+        </div>
+        <!-- Proyecto Individual -->
+        <div class="proy col-12 col-md-6 col-lg-4">
+          <div class="overlay-relative ">
+            <img class="img-proyecto" src="assets/images/proyectos/ARprograma-portfolio-app-web.png" alt="Proyecto">
+            <div class="overlay">
+              <a href="index.html">Ver proyecto</a>
+            </div>
+          </div>
+          <h3>Portfolio Web AR Programa de Alexander Repollo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quia atque error eius reiciendis, nesciunt corrupti nostrum ducimus optio ea deserunt id recusandae sint. Recusandae amet totam illo quisquam tempora!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/cf8ef6e8a5.js" crossorigin="anonymous"></script>
 </body>
 </html>
