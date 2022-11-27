@@ -9,6 +9,11 @@
   --lighter-color: #e3ba7d;
   --almost-white: #fff2dc;
   --white: #fffdfa;
+  --shadow-1: rgba(0, 0, 0, 0.1);
+  --shadow-2: rgba(0, 0, 0, 0.2);
+  --shadow-3: rgba(0, 0, 0, 0.3);
+  --shadow-4: rgba(0, 0, 0, 0.4);
+  --shadow-6: rgba(0, 0, 0, 0.6);
 }
 
 /* reestablece estilos de navegador y seteamos colores, fondo, y flia de letras */
@@ -50,9 +55,10 @@ h1 {
 .seccion-glass {
   color: var(--almost-white);
   /* glassmorfism */
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--shadow-2);
   border-radius: 10px 10px;
-  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.6), 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 8px 2px var(--shadow-6); 
+  /* 0 4px 30px rgba(0, 0, 0, 0.1) */
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -71,9 +77,9 @@ h1 {
 
 .navbar {
   /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--shadow-2);
   border-radius: 0px 0px 5px 5px;
-  box-shadow: 2px 0px 4px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0px 4px 3px var(--shadow-1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
@@ -102,8 +108,8 @@ h1 {
 
 .nav-item:hover .nav-link, .nav-item-drop:hover .btn {
   color: var(--white);
-  background-color:rgba(0, 0, 0, 0.08);
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.08);
+  background-color:var(--shadow-1);
+  box-shadow: 0 0 2px 2px var(--shadow-1);
   border-radius: 5px;
   transform: translateY(-2px);
   border-bottom: 1px solid var(--white);
@@ -132,7 +138,7 @@ h1 {
 }
 
 .dropdown-menu {
-  background-color:rgba(0, 0, 0, 0.35);
+  background-color:var(--shadow-4);
 }
 
 
@@ -154,9 +160,9 @@ h1 {
   margin-bottom: 30vh;
   margin-top: 10vh;
   /* glassmorfism */
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--shadow-2);
   border-radius: 10px 10px;
-  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.6), 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 8px 2px var(--shadow-6), 0 4px 30px var(--shadow-1);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 
@@ -164,8 +170,8 @@ h1 {
 }
 
 .hero-principal:hover {
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 6px 8px 2px rgba(0, 0, 0, 0.6), 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: var(--shadow-3);
+  box-shadow: 2px 6px 8px 2px var(--shadow-6), 0 4px 30px var(--shadow-1);
   transform: translateY(-2px);
 
 }
@@ -289,7 +295,7 @@ h1 {
 }
 
 .accordion-button:hover {
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color:var(--shadow-4);
   color: var(--almost-white);
 }
 
@@ -320,7 +326,7 @@ h1 {
 .course-button {
   text-decoration: none;
   color: var(--almost-white);
-  background-color:rgba(0, 0, 0, 0.3);
+  background-color:var(--shadow-2);
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
@@ -329,9 +335,9 @@ h1 {
 
 .course-button:hover {
   color: var(--white);
-  background-color:rgba(0, 0, 0, 0.7);
+  background-color:var(--shadow-6);
   padding: 12px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 2px 2px var(--shadow-1);
   border-bottom: 1px solid var(--white);
 }
 
@@ -354,7 +360,7 @@ h1 {
   padding: 10px;
   font-size: 30px;
   color: var(--white);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--shadow-3);
 }
 
 .icon-container {
@@ -436,7 +442,7 @@ h1 {
   padding: 300px;
   text-decoration: none;
   color: var(--almost-white);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--shadow-4);
 
 }
 
@@ -448,6 +454,72 @@ h1 {
 
 .overlay-relative:hover .overlay {
   display: flex;
+}
+
+
+/* Footer / Contacto */
+
+footer {
+  padding-top: 120px;
+  margin-top: 120px;
+}
+
+.contacto-lema {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 60px;
+  /* background-color: var(--shadow-2); */
+}
+
+.contacto-preg {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 100px;
+  background-color: var(--shadow-2);
+}
+
+.iconos-redes-sociales {
+  margin-bottom: 60px;
+}
+
+.iconos-redes-sociales a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  /* border: 1px solid var(--almost-white); */
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: var(--shadow-4);
+  color: var(--white);
+  transform: translateY(-4px);
+  border-bottom: 1px solid var(--white);
+  box-shadow: 0 0 2px 2px var(--shadow-1);
+}
+
+.iconos-redes-sociales i {
+  color: var(--almost-white);
+  font-size: 2rem;
+  transition: all 0.3s ease-in;
+}
+
+/* .iconos-redes-sociales a:hover i {
+  font-size: 2.2rem;
+} */
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: var(--lighter-color);
+  padding: 20px;
 }
 
 
