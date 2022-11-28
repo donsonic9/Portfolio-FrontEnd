@@ -67,7 +67,7 @@ h1 {
   transition: all 0.3s ease;
 }
 .seccion-glass-h:hover {
-  background: rgba(0, 0, 0, 0.35);
+  background: var(--shadow-4);
   transform: translateY(-2px);
 }
 
@@ -124,12 +124,13 @@ h1 {
 .nav-item-drop .btn {
   color: var(--almost-white);
   font-size: 1.5rem;
+  outline: none;
 }
 
 .dropdown-item {
   color: var(--almost-white);
   border-radius: 0px;
-  
+  outline: none;
 }
 
 .dropdown-item:hover {
@@ -139,6 +140,12 @@ h1 {
 
 .dropdown-menu {
   background-color:var(--shadow-4);
+  outline: none;
+}
+
+.btn-group .btn {
+  border: none;
+  outline: none;
 }
 
 
@@ -154,7 +161,7 @@ h1 {
 
 .hero-principal {
   color: var(--almost-white);
-  padding: 3rem;
+  padding: 3rem 3.1rem;
   max-width: 70%;
   margin: 0 auto;
   margin-bottom: 30vh;
@@ -180,7 +187,7 @@ h1 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin: 20px;
+  margin: 20px 20px 40px 20px;
 }
 
 /* Sobre mi */
