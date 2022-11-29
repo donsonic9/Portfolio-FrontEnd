@@ -1,6 +1,6 @@
 /* Variables para ajustar el estilo facilemnte */
 
-@import url('../custom-styles/custom-1.css');
+@import url('custom-1.css');
 
 :root {
   /* los colores estan en forma de variable en el import */
@@ -84,7 +84,7 @@ section {
   min-height: 66vh;
   max-width: 99.9vw;
   text-align: center;
-  margin-top: 18vh;
+  margin-top: 13vh;
   margin-left: 0.1vw;
 }
 
@@ -96,10 +96,10 @@ section {
 
 .login-principal h1 {
   font-size: 3rem;
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
-.login.principal p {
+.login-principal p {
   margin: 0;
 }
 
@@ -119,7 +119,9 @@ section {
   color: var(--light-color-2);
 }
 
-.login-principal input[type="email"], input[type="password"] {
+.login-principal input[type="email"], 
+.login-principal input[type="password"], 
+.login-principal input[type="text"] {
   /* El outline sirve para quitarle el cuadro blanco cuando esta seleccionado */
   outline: none;
   border: none;
@@ -162,6 +164,6 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 390px) {
   .login {
-    margin-top: 16vh;
+    margin-top: 10vh;
   }
 }

@@ -1,6 +1,6 @@
 /* Variables para ajustar el estilo facilemnte */
 
-@import url('../custom-styles/custom-1.css');
+@import url('custom-1.css');
 
 :root {
   /* los colores estan en forma de variable en el import */
