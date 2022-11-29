@@ -1,13 +1,13 @@
 /* Variables para ajustar el estilo facilemnte */
+
+@import url('../custom-styles/custom-1.css');
+
 :root {
-  /* Fall chill warm colours */
+  /* los colores estan en forma de variable en el import */
+
+  /* neutral standard colors */
   --darker-color: #1a1a1a;
   --dark-color: #2d2d2d;
-  --color: #904b19;
-  --light-color: #d56717;
-  --light-color-2: #f5d5a4;
-  --lighter-color: #e3ba7d;
-  --almost-white: #fff2dc;
   --white: #fffdfa;
   --shadow-1: rgba(0, 0, 0, 0.1);
   --shadow-2: rgba(0, 0, 0, 0.2);
@@ -24,7 +24,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  background-image: url("assets/images/back-2.jpg");
+  background-image: var(--background-img);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -84,18 +84,23 @@ section {
   min-height: 66vh;
   max-width: 99.9vw;
   text-align: center;
-  margin: 20vh 0;
+  margin-top: 18vh;
   margin-left: 0.1vw;
 }
 
 .login-principal {
   min-height: 62vh;
   background-color: var(--shadow-4);
+  /* transform: scale(0.9); */
 }
 
 .login-principal h1 {
   font-size: 3rem;
-  margin: 30px 0;
+  margin: 25px 0;
+}
+
+.login.principal p {
+  margin: 0;
 }
 
 .login-principal .container {
@@ -103,8 +108,9 @@ section {
 }
 
 .login-principal form {
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
+  /* transform: scale(1.1); */
   /* background-color: var(--shadow-2); */
 }
 

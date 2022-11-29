@@ -1,13 +1,13 @@
 /* Variables para ajustar el estilo facilemnte */
+
+@import url('../custom-styles/custom-1.css');
+
 :root {
-  /* Fall chill warm colours */
+  /* los colores estan en forma de variable en el import */
+
+  /* neutral standard colors */
   --darker-color: #1a1a1a;
   --dark-color: #2d2d2d;
-  --color: #904b19;
-  --light-color: #d56717;
-  --light-color-2: #f5d5a4;
-  --lighter-color: #e3ba7d;
-  --almost-white: #fff2dc;
   --white: #fffdfa;
   --shadow-1: rgba(0, 0, 0, 0.1);
   --shadow-2: rgba(0, 0, 0, 0.2);
@@ -22,7 +22,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  background-image: url("assets/images/back-2.jpg");
+  background-image: var(--background-img);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -287,6 +287,20 @@ h1 {
   padding: 40px 0;
 }
 
+.edu .cv {
+  text-decoration: none;
+  max-width: 200px;
+  padding: 10px;
+  color: var(--white);
+  background-color: rgb(49, 121, 255);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.edu .cv:hover {
+  background-color: rgb(69, 193, 255);
+}
+
 .div-title {
   margin: 30px 10px;
 }
@@ -473,8 +487,8 @@ footer {
 
 .contacto-lema {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2.7rem;
+  font-weight: 500;
   padding: 20px;
   margin-bottom: 60px;
   /* background-color: var(--shadow-2); */
@@ -482,7 +496,7 @@ footer {
 
 .contacto-preg {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 20px;
   margin-bottom: 100px;
   background-color: var(--shadow-2);
