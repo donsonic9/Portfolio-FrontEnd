@@ -12,7 +12,7 @@
   --light-color-2: #a4f5f5;
   --lighter-color: #7dd7e3;
   --almost-white: #ffdcdc; */
-  /* --background-img: url("../assets/images/back-1.jpg"); */
+  /* --background-img: url("assets/images/back-1.jpg"); */
   /* --background-img: url("https://wallpapercave.com/wp/wp2233413.jpg"); */
 
 
@@ -22,7 +22,9 @@
   --light-color-2: #f5d5a4;
   --lighter-color: #e3ba7d;
   --almost-white: #fff2dc;
-  --background-img: url("../images/back-2.jpg");
+  --seccion-clara-back: #f6ead4;
+  --background-img: url("../images/back-2-sl.jpg");
+  /* --background-img: url("https://cdn.create.vista.com/api/media/medium/105701758/stock-photo-beautiful-green-forest?token="); */
 
 
   /* Fall red warm colours (back-3)*/
@@ -32,4 +34,14 @@
   --lighter-color: #e37d7d;
   --almost-white: #ffdcdc;
   --background-img: url("../assets/images/back-3.jpg"); */
+
+
+  /* Green forest colours  */
+  /* --color: #0f6913;
+  --light-color: #17d530;
+  --light-color-2: #a9f5a4;
+  --lighter-color: #7de37d;
+  --almost-white: #dcffde;
+  --seccion-clara-back: #d4f6d5;
+  --background-img: url("https://cdn.create.vista.com/api/media/medium/105701758/stock-photo-beautiful-green-forest?token="); */
 }

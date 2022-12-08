@@ -5,6 +5,7 @@
 :root {
   /* los colores estan en forma de variable en el import */
 
+
   /* neutral standard colors */
   --darker-color: #1a1a1a;
   --dark-color: #2d2d2d;
@@ -29,6 +30,7 @@ body {
   background-attachment: fixed;
 
   font-family: 'Raleway', sans-serif;
+  transition: all 0.2s ease; 
 }
 
 
@@ -48,7 +50,7 @@ h1 {
 }
 
 .seccion-clara {
-  background-color: var(--almost-white);
+  background-color: var(--seccion-clara-back);
   color: var(--darker-color);
 }
 
@@ -70,6 +72,10 @@ h1 {
   background: var(--shadow-4);
   transform: translateY(-2px);
 }
+
+/* .fondo-body {
+  background-image: url("https://images.unsplash.com/photo-1504860708171-19abd233ec3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+} */
 
 
 
