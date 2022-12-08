@@ -34,3 +34,20 @@
   --almost-white: #ffdcdc;
   --background-img: url("../assets/images/back-3.jpg"); */
 }
+
+.seccion-clara {
+  background-color: var(--seccion-clara-back);
+  color: var(--almost-white);
+}
+
+.sobre-mi-description {
+  color: var(--almost-white);
+}
+
+.accordion-body h4, .accordion-body p {
+  color: var(--almost-white);
+}
+
+.proyectos-cont p, .proyectos-cont h3 {
+  color: var(--almost-white);
+}

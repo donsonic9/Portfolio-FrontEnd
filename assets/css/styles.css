@@ -1,6 +1,6 @@
 /* Variables para ajustar el estilo facilemnte */
 
-@import url('custom-1.css');
+/* @import url('custom-1.css'); */
 
 :root {
   /* los colores estan en forma de variable en el import */
@@ -30,7 +30,7 @@ body {
   background-attachment: fixed;
 
   font-family: 'Raleway', sans-serif;
-  transition: all 0.2s ease; 
+  transition: all 1s ease; 
 }
 
 

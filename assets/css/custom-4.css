@@ -45,3 +45,20 @@
   --seccion-clara-back: #122916;
   --background-img: url("https://cdn.create.vista.com/api/media/medium/105701758/stock-photo-beautiful-green-forest?token="); */
 }
+
+.seccion-clara {
+  background-color: var(--seccion-clara-back);
+  color: var(--almost-white);
+}
+
+.sobre-mi-description {
+  color: var(--almost-white);
+}
+
+.accordion-body h4, .accordion-body p {
+  color: var(--almost-white);
+}
+
+.proyectos-cont p, .proyectos-cont h3 {
+  color: var(--almost-white);
+}
