@@ -406,6 +406,14 @@ h1 {
   padding: 10px;
 }
 
+
+.fa-brands-ts {
+  width: 85px;
+  height: 85px;
+  color: var(--almost-white);
+  /* margin-bottom: 10px; */
+}
+
 .icon-container p {
   font-size: 30px;
   font-weight: 600;
